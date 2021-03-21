@@ -3,6 +3,10 @@
     overflow: hidden;
     position: absolute;
 }
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,231,148,0.36458333333333337) 100%);
+}
 .col-3{
 
     margin: 25px;
@@ -17,18 +21,38 @@ a {
 }
 
 .col-3 p{
-    background-color:grey;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,231,148,0.36458333333333337) 100%);
     position: relative;
     padding-top: 9px;
     top: -34px;
-    
+
     width: 129%;
     text-align: center;
     visibility: hidden;
 }
+ .col-3>p>a{
+     color: chartreuse;
+     text-decoration: none;
+ }
 .col-3:hover p{
     visibility: visible;
+    transform: scale(1.15);
+
+transition: 1s ;
+
 }
+ .col-3:hover{
+    margin-left:50px ;
+    margin-right: 50px;
+    transition: 1s ;
+}
+.col-3 .card:hover{
+transform: scale(1.15);
+
+transition: 1s ;
+}
+
 .card img {
     height: 14em;
     /* width: 20em; */
